@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import MainNavigation from "../components/MainNavigation";
+import Main from "../screen/Main";
 
 function RootRouter() {
   return (
@@ -8,7 +9,7 @@ function RootRouter() {
       <div id="root-layout">
         <MainNavigation />
         <Routes>
-          <Route />
+          <Route path="/" element={<Main />} />
         </Routes>
       </div>
     </>
