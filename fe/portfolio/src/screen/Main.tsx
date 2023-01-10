@@ -1,16 +1,34 @@
 import React from "react";
 import "./Main.scss";
+import AboutMe from "../components/AboutMe";
+import SkillStack from "../components/SkillStack";
+import Archive from "../components/Archive";
+import Project from "../components/Project";
+import Career from "../components/Career";
+import Title from "../components/Title";
 
 function Main() {
   return (
     <div id="main">
-      <div className="main-title">안녕하세요</div>
+      <div className="main-title">
+        <Title/>
+      </div>
       <div className="main-content">
-        <div className="intro">자기소개</div>
-        <div className="skill">기술스택</div>
-        <div className="archive">아카이브</div>
-        <div className="project">프로젝트</div>
-        <div className="career">커리어</div>
+        <div className="main-intro">
+          <AboutMe/>
+        </div>
+        <div className="main-skill">
+          <SkillStack/>
+        </div>
+        <div className="main-archive">
+          <Archive/>
+        </div>
+        <div className="main-project">
+          <Project/>
+        </div>
+        <div className="main-career">
+          <Career />
+        </div>
       </div>
     </div>
   );

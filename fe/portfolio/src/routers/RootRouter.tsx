@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import MainNavigation from "../components/MainNavigation";
+import MainNavigation from "../components/nav/MainNavigation";
 import Main from "../screen/Main";
 
 function RootRouter() {
